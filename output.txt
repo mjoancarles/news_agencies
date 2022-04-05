@@ -1,0 +1,7 @@
+C:\Users\Juanka\PycharmProjects\pythonProject\venv\Scripts\python.exe C:/Users/Juanka/PycharmProjects/News_agencies/main.py
+La Vanguardia (Reuters) : PSOE winner of european elections in Spain
+El Pais (Reuters) : PSOE winner of european elections in Spain
+626347612 (Reuters) : PSOE winner of european elections in Spain
+El Pais (EFE) : El partit socialista guanya les eleccions europees
+
+Process finished with exit code 0

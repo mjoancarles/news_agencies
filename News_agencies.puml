@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/class-diagram
+skinparam classAttributeIconSize 0
+
+abstract class Observable{
++name : String
+//+add_observer(observer : Observer)//
+//+delete_observer(observer : Observer)//
+//+delete_observers()//
+//+notify_observers(news : String)//
+}
+
+class NewsAgency extends Observable{
++name : String
++add_observer(observer : Observer)
++delete_observer(observer : Observer)
++delete_observers()
++notify_observers(news : String)
++pusblish_news(news : String)
+}
+
+interface Observer{
+//+update(observable : Observable, news : String)//
+}
+
+class Newspaper implements Observer{
++name : String
++update(observable : Observable, news : String)
+}
+
+class SMS implements Observer{
++phone_number : String
++update(observable : Observable, news : String)
+}
+
+Observable o--right--> "*" Observer : observers
+
+@enduml
